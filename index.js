@@ -19,8 +19,8 @@ app.set('views', path.join(__dirname, 'views'));
 const config = {
     user: 'azureuser',
     password: 'P@ssw0rdssss',
-    server: 'week911.database.windows.net',
-    database: 'week911',
+    server: 'week1995server.database.windows.net',
+    database: 'week1995db',
     options: {
         encrypt: true,
         enableArithAbort: true
@@ -31,7 +31,7 @@ const config = {
 async function connectToDatabase() {
   try {
     await sql.connect(config);
-    console.log('Connected to Azure SQL Database');
+    console.log('Connected to the Azure SQL Database');
   } catch (err) {
     console.error('Error connecting to Azure SQL Database:', err);
   }
